@@ -1,0 +1,15 @@
+name: Isolated Python and Docker checks
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v6
+      - run: docker build --target test -t app-test .
+      - run: docker run --rm --network none --read-only --tmpfs /tmp app-test
+      - run: docker build --target runtime -t app-runtime .

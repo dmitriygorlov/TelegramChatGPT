@@ -135,3 +135,11 @@ log.txt
 users.json
 
 *.json
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.env
+history*.json
+users.json
+chat-dataset.jsonl

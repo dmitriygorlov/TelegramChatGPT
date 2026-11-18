@@ -1,15 +1,2 @@
-pyTelegramBotAPI==4.9.0
-openai==0.27.2
-googletrans==3.1.0a0
-pandas==1.5.3
-tiktoken==0.3.1
-flask==2.2.3
-
-# For code self exec
-beautifulsoup4==4.11.2
-lxml==4.9.2
-urllib==1.26.15
-scipy==1.10.1
-trafilatura==1.4.1
-simplegmail==4.1.1
-yfinance==0.2.13
+openai==3.55.0
+pyTelegramBotAPI==4.37.1
